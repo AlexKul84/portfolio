@@ -15,7 +15,7 @@ body {
     color: #ffffff;
 }
 
-header, main, footer {
+.header, main, footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -36,3 +36,32 @@ a:hover {
 button:hover {
     color: #ffffff;
 }
+
+/** header **/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(assets/svg/logo_unvisited.svg);
+    background-image: no-repeat;
+}
+
+.navigation {
+    margin-left: auto;
+}
+
+.lang {
+}
+
+.menu_list {
+    display: flex;
+}
+
+/** end header **/
