@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header, main, footer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #bdae82;
+}
+
+.bg_dark {
+    color: #bdae82;
+}
+
+.bg_gold {
+    color: #000000;
+}
+
+button:hover {
+    color: #ffffff;
+}
