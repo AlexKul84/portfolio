@@ -56,12 +56,14 @@ a:hover {
 .bg_dark {
     color: #bdae82;
     background-color: #000000;
+    border: 2px solid #bdae82;
     transition: .5s;
 }
 
 .bg_gold {
     color: #000000;
     background-color: #bdae82;
+    border: none;
     transition: .5s;
 }
 
@@ -277,8 +279,15 @@ a:hover {
 
 .btn_flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 895px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+}
+
+.btn_flex .btn{
+    width: 220px;
 }
 
 .flex_container_img {
