@@ -189,3 +189,100 @@ a:hover {
 }
 
 /** end hero **/
+
+/** skills **/
+
+.skills {
+    height: 382px;
+}
+
+.skills .heading_wrap {
+    position: relative;
+    margin: 10px auto 60px auto;
+}
+
+.skills .heading_wrap .heading {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    height: 80px;
+    width: 138px;
+    background-color: #000000;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.title_decoration {
+    position: relative;
+    margin: 0 auto;
+    width: 700px;
+    height: 2px;
+    background-color: #bdae82;
+    top: -40px;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_item {
+    text-align: center;
+    width: 320px;
+    height: 240px;
+}
+
+.img_item {
+    margin-bottom: 50px;
+}
+
+.header_item {
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.discription_item {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    color: #ffffff;
+}
+
+/** end skills **/
+
+/** portfolio **/
+
+.heading_wrap {
+    position: relative;
+    margin: 100px auto 60px auto;
+}
+
+.heading_wrap .heading {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    height: 80px;
+    width: 138px;
+    background-color: #000000;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.title_decoration {
+    position: relative;
+    margin: 0 auto;
+    width: 700px;
+    height: 2px;
+    background-color: #bdae82;
+    top: -40px;
+}
+
+/** end portfolio **/
