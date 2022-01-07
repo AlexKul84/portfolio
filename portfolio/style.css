@@ -20,6 +20,24 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+
+
 a:hover {
     cursor: pointer;
     color: #bdae82;
