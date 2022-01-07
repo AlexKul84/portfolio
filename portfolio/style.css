@@ -196,20 +196,26 @@ a:hover {
     height: 382px;
 }
 
-.skills .heading_wrap {
+.heading_wrap {
     position: relative;
+}
+
+.skills .heading_wrap {
     margin: 10px auto 60px auto;
 }
 
-.skills .heading_wrap .heading {
+.heading_wrap .heading {
     position: relative;
     margin: 0 auto;
     z-index: 1;
     height: 80px;
-    width: 138px;
     background-color: #000000;
     text-align: center;
     padding: 0 20px;
+}
+
+.skills .heading_wrap .heading {
+    width: 152px;
 }
 
 .title_decoration {
@@ -265,24 +271,60 @@ a:hover {
     margin: 100px auto 60px auto;
 }
 
-.heading_wrap .heading {
-    position: relative;
-    margin: 0 auto;
-    z-index: 1;
-    height: 80px;
-    width: 138px;
-    background-color: #000000;
-    text-align: center;
-    padding: 0 20px;
+.portfolio .heading_wrap .heading {
+    width: 232px;
 }
 
-.title_decoration {
-    position: relative;
+.btn_flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.flex_container_img {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 1400px;
+    height: 1145px;
     margin: 0 auto;
-    width: 700px;
-    height: 2px;
-    background-color: #bdae82;
-    top: -40px;
+}
+
+.image_item {
+    width: 450px;
 }
 
 /** end portfolio **/
+
+/** video **/
+
+.video .heading_wrap .heading {
+    width: 154px;
+}
+
+.video_player {
+    margin: 0 auto;
+    width: 1400px;
+    height: 705px;
+    background-image: url(assets/img/video-player.jpg);
+    display: flex;
+}
+
+.play {
+    position: relative;
+    margin: 0 auto;
+    align-self: center;
+    z-index: 1;
+    height: 130px;
+    width: 130px;
+    background-image: url(assets/svg/Play_Unvisited.svg);
+    transition: .5s;
+}
+
+.play:hover {
+    background-image: url(assets/svg/Play_hover.svg);
+    cursor: pointer;
+}
+
+/** end video **/
