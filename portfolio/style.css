@@ -62,24 +62,77 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     height: 90px;
+    background-image: url(assets/img/bg.jpg);;
 }
 
-.logo {
+.logo a {
+    display: block;
     height: 50px;
     width: 50px;
     background-image: url(assets/svg/logo_unvisited.svg);
     background-image: no-repeat;
+    transition: .5s;
+}
+
+.logo a:hover {
+    background-image: url(assets/svg/logo_hover.svg);
+    cursor: pointer;
 }
 
 .navigation {
     margin-left: auto;
 }
 
-.lang {
-}
-
 .menu_list {
     display: flex;
+}
+
+.list_item {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.list_item a {
+    display: block;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.list_item a:hover {
+    color: #bdae82;
+}
+
+.lang {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.lang a {
+    text-decoration: none;
+    transition: .5s;
+}
+
+.lang a:hover {
+    color: #bdae82;
+}
+
+.lang .active {
+    margin-right: 8px;
+    color: #bdae82;
+}
+
+.lang .rus {
+    margin-left: 8px;
+    color: #ffffff;
 }
 
 /** end header **/
