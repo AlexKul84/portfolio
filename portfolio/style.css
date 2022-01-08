@@ -282,7 +282,7 @@ a:hover {
     width: 895px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .btn_flex .btn{
@@ -372,14 +372,17 @@ a:hover {
     color: #ffffff;
 }
 
-.price_item p span {
+.price_item .count span {
     font-family: Merriweather;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 48px;
-    margin-bottom: 20px;
     color: #bdae82;
+}
+
+.count {
+    margin-bottom: 20px;
 }
 
 .price_item .btn {
