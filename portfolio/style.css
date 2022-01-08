@@ -385,3 +385,58 @@ a:hover {
 }
 
 /** end price **/
+
+/** contacts **/
+
+.contacts {
+    background-image: url(assets/img/contacts.jpg);
+    height: 700px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: end;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 445px;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+
+.contact_form h2 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    color: #bdae82;
+    margin-bottom: 40px;
+}
+
+.contact_form input {
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #bdae82;
+    margin-bottom: 20px;
+}
+
+.contact_form textarea {
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #bdae82;
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+
+.contact_form input[placeholder], .contact_form textarea[placeholder] {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+/** end contacts **/
