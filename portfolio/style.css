@@ -440,3 +440,91 @@ a:hover {
 }
 
 /** end contacts **/
+
+/** footer **/
+
+.footer {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #ffffff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: .5s;
+}
+
+.footer a:hover {
+    color: #bdae82;
+}
+
+.left_footer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left_footer p {
+    margin-left: 20px;
+}
+
+.sosials {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sosials li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.sosials li a {
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+
+.sosials li .inst_1 {
+    background-image: url(assets/svg/inst_1.svg);
+    transition: .5s;
+}
+
+.sosials li .fb_1 {
+    background-image: url(assets/svg/fb_1.svg);
+    transition: .5s;
+}
+
+.sosials li .tw_1 {
+    background-image: url(assets/svg/tw_1.svg);
+    transition: .5s;
+}
+
+.sosials li .pinterest_1 {
+    background-image: url(assets/svg/pinterest_1.svg);
+    transition: .5s;
+}
+
+.sosials li .inst_1:hover {
+    background-image: url(assets/svg/inst_2.svg);
+}
+
+.sosials li .fb_1:hover {
+    background-image: url(assets/svg/fb_2.svg);
+}
+
+.sosials li .tw_1:hover {
+    background-image: url(assets/svg/tw_2.svg);
+}
+
+.sosials li .pinterest_1:hover {
+    background-image: url(assets/svg/pinterest_2.svg);
+}
+
+/** end footer **/
