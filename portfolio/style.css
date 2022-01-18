@@ -196,6 +196,7 @@ a:hover {
 
 .skills {
     height: 382px;
+    padding-top: 7px;
 }
 
 .heading_wrap {
@@ -203,7 +204,7 @@ a:hover {
 }
 
 .skills .heading_wrap {
-    margin: 8px auto 60px auto;
+    margin: 0 auto 60px auto;
 }
 
 .heading_wrap .heading {
@@ -269,9 +270,13 @@ a:hover {
 
 /** portfolio **/
 
+.portfolio {
+    padding-top: 107px;
+}
+
 .portfolio .heading_wrap {
     position: relative;
-    margin: 100px auto 60px auto;
+    margin: 0 auto 60px auto;
 }
 
 .portfolio .heading_wrap .heading {
@@ -310,8 +315,12 @@ a:hover {
 
 /** video **/
 
+.video {
+    padding-top: 97px;
+}
+
 .video .heading_wrap {
-    margin: 97px auto 60px auto;
+    margin: 0 auto 60px auto;
 }
 
 .video .heading_wrap .heading {
@@ -353,12 +362,16 @@ a:hover {
 
 /** price **/
 
+.price {
+    padding-top: 98px;
+}
+
 .price .heading_wrap .heading {
     width: 154px;
 }
 
 .price .heading_wrap {
-    margin: 98px auto 60px auto;
+    margin: 0 auto 59px auto;
 }
 
 .price_item {
@@ -414,7 +427,7 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center 0;
     height: 700px;
-    margin-top: 100px;
+    padding-top: 100px;
     display: flex;
     justify-content: end;
 }
