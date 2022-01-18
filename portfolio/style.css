@@ -156,16 +156,18 @@ a:hover {
 
 .hero {
     position: relative;
+    left: -20px;
     top: -90px;
     background-image: url(assets/img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
     height: 910px;
+    min-width: 1440px;
 }
 
 .hero .wrap {
     padding-top: 250px;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 .hero_text {
@@ -196,7 +198,7 @@ a:hover {
 
 .skills {
     height: 382px;
-    padding-top: 7px;
+    padding-top: 10px;
 }
 
 .heading_wrap {
@@ -234,6 +236,7 @@ a:hover {
 .flex_container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .flex_item {
@@ -271,7 +274,7 @@ a:hover {
 /** portfolio **/
 
 .portfolio {
-    padding-top: 107px;
+    padding-top: 110px;
 }
 
 .portfolio .heading_wrap {
@@ -425,11 +428,14 @@ a:hover {
 .contacts {
     background-image: url(assets/img/contacts.jpg);
     background-repeat: no-repeat;
-    background-position: center 0;
-    height: 700px;
+    background-position: center 100px;
+    min-width: 1440px;
+    height: 800px;
     padding-top: 100px;
     display: flex;
     justify-content: end;
+    position: relative;
+    left: -20px;
 }
 
 .contact_form{
@@ -438,6 +444,7 @@ a:hover {
     width: 450px;
     height: 445px;
     margin-top: 60px;
+    margin-right: 20px;
 }
 
 .contact_form h2 {
