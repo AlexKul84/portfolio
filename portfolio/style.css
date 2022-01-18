@@ -82,17 +82,13 @@ a:hover {
     height: 90px;
 }
 
-.logo a {
-    display: block;
+.logo .icon {
     height: 50px;
-    width: 50px;
-    background-image: url(assets/svg/logo_unvisited.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 50px; 
     transition: .5s;
 }
 
-.logo a:hover {
+.logo .icon:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
     cursor: pointer;
 }
