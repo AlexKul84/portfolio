@@ -87,11 +87,13 @@ a:hover {
     height: 50px;
     width: 50px;
     background-image: url(assets/svg/logo_unvisited.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: .5s;
 }
 
 .logo a:hover {
-    background-image: url(assets/svg/logo_hover.svg);
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
     cursor: pointer;
 }
 
@@ -160,7 +162,8 @@ a:hover {
     position: relative;
     top: -90px;
     background-image: url(assets/img/bg.jpg);
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center 0;
     height: 910px;
 }
 
@@ -324,6 +327,8 @@ a:hover {
     max-width: 1400px;
     height: 705px;
     background-image: url(assets/img/video-player.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
     display: flex;
 }
 
@@ -336,13 +341,15 @@ a:hover {
     height: 130px;
     width: 130px;
     background-image: url(assets/svg/Play_Unvisited.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     border: none;
     transition: .5s;
     background-color: rgb(0,0,0,0);
 }
 
 .play:hover {
-    background-image: url(assets/svg/Play_hover.svg);
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
     cursor: pointer;
 }
 
@@ -408,7 +415,8 @@ a:hover {
 
 .contacts {
     background-image: url(assets/img/contacts.jpg);
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center 0;
     height: 700px;
     margin-top: 100px;
     display: flex;
@@ -513,38 +521,34 @@ a:hover {
 
 .sosials li .inst_1 {
     background-image: url(assets/svg/inst_1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: .5s;
 }
 
 .sosials li .fb_1 {
     background-image: url(assets/svg/fb_1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: .5s;
 }
 
 .sosials li .tw_1 {
     background-image: url(assets/svg/tw_1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: .5s;
 }
 
 .sosials li .pinterest_1 {
     background-image: url(assets/svg/pinterest_1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: .5s;
 }
 
-.sosials li .inst_1:hover {
-    background-image: url(assets/svg/inst_2.svg);
-}
-
-.sosials li .fb_1:hover {
-    background-image: url(assets/svg/fb_2.svg);
-}
-
-.sosials li .tw_1:hover {
-    background-image: url(assets/svg/tw_2.svg);
-}
-
-.sosials li .pinterest_1:hover {
-    background-image: url(assets/svg/pinterest_2.svg);
+.sosials li .inst_1:hover, .sosials li .fb_1:hover, .sosials li .tw_1:hover, .sosials li .pinterest_1:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 /** end footer **/
