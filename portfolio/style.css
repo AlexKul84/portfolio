@@ -421,16 +421,34 @@ a:hover {
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .image_item {
+        margin-bottom: 0;
+    }
+}
+
 /** end portfolio **/
 
 /** video **/
 
 .video {
-    padding-top: 70px;
+    padding: 70px 20px 0 20px;
+}
+
+@media (max-width: 768px) {
+    .video {
+        padding: 70px 0 0 0;
+    }
 }
 
 .video .heading_wrap {
     margin: 0 auto 60px auto;
+}
+
+@media (max-width: 768px) {
+    .video .heading_wrap {
+        margin: 0 auto 50px auto;
+    }
 }
 
 .video .heading_wrap .heading {
@@ -445,6 +463,16 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center 0;
     display: flex;
+    position: relative;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .video_player {
+        max-width: 768px;
+        height: 418px;
+    }
 }
 
 .play {
