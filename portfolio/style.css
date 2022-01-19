@@ -683,6 +683,14 @@ a:hover {
     color: #ffffff;
 }
 
+@media (max-width: 768px) {
+    .footer_container {
+        flex-direction: column;
+        line-height: 24px;
+        padding-top: 28px;
+    }
+}
+
 .footer a {
     text-decoration: none;
     color: #ffffff;
@@ -701,6 +709,13 @@ a:hover {
 
 .center_footer {
     padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .center_footer {
+        padding-left: 0;
+        margin-top: 16px;
+    }
 }
 
 .sosials {
