@@ -286,6 +286,12 @@ a:hover {
     width: 152px;
 }
 
+@media (max-width: 768px) {
+    .skills .heading_wrap .heading {
+        width: 131px;
+    }
+}
+
 .title_decoration {
     position: relative;
     margin: 0 auto;
@@ -354,7 +360,7 @@ a:hover {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 36px;
     color: #ffffff;
 }
 
@@ -362,6 +368,7 @@ a:hover {
     .discription_item {
         margin-right: 10px;
         margin-left: 10px;
+        line-height: 22px;
     }
 }
 
@@ -382,11 +389,23 @@ a:hover {
 
 .portfolio .heading_wrap {
     position: relative;
-    margin: 0 auto 49px auto;
+    margin: 0 auto 58px auto;
+}
+
+@media (max-width: 768px) {
+    .portfolio .heading_wrap {
+        margin: 0 auto 49px auto;
+    }
 }
 
 .portfolio .heading_wrap .heading {
     width: 226px;
+}
+
+@media (max-width: 768px) {
+    .portfolio .heading_wrap .heading {
+        width: 186px;
+    }
 }
 
 .btn_flex {
@@ -442,7 +461,7 @@ a:hover {
 /** video **/
 
 .video {
-    padding: 70px 20px 0 20px;
+    padding: 75px 20px 0 20px;
 }
 
 @media (max-width: 768px) {
@@ -462,7 +481,7 @@ a:hover {
 }
 
 .video .heading_wrap .heading {
-    max-width: 131px;
+    max-width: 152px;
 }
 
 .video_player {
@@ -542,7 +561,13 @@ a:hover {
 }
 
 .price .heading_wrap .heading {
-    width: 122px;
+    width: 144px;
+}
+
+@media (max-width: 768px) {
+    .price .heading_wrap .heading {
+        width: 123px;
+    }
 }
 
 .price .heading_wrap {
@@ -613,14 +638,13 @@ a:hover {
     position: relative;
     background-image: url(assets/img/contacts.jpg);
     background-repeat: no-repeat;
-    background-position: center 100px;
+    background-position: center 0;
     background-size: cover;
-    height: 800px;
-    padding-top: 100px;
+    height: 700px;
     display: flex;
     justify-content: end;
     max-width: 1440px;
-    margin: 0 auto;
+    margin-top: 100px;
 }
 
 @media (max-width: 768px) {
