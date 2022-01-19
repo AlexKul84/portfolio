@@ -286,6 +286,12 @@ a:hover {
     top: -40px;
 }
 
+@media (max-width: 768px) {
+    .title_decoration {
+        max-width: 364px;
+    }
+}
+
 .flex_container {
     display: flex;
     justify-content: space-between;
@@ -358,6 +364,12 @@ a:hover {
     padding-top: 100px;
 }
 
+@media (max-width: 768px) {
+    .portfolio {
+        padding-top: 46px;
+    }
+}
+
 .portfolio .heading_wrap {
     position: relative;
     margin: 0 auto 60px auto;
@@ -377,6 +389,13 @@ a:hover {
     margin-bottom: 60px;
 }
 
+@media (max-width: 768px) {
+    .btn_flex {
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
 .btn_flex .btn{
     width: 220px;
 }
@@ -388,6 +407,13 @@ a:hover {
     flex-wrap: wrap;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .flex_container_img {
+        justify-content: center;
+        gap: 12.5px;
+    }
 }
 
 .image_item {
