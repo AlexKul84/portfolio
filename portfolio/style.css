@@ -250,6 +250,9 @@ a:hover {
 @media (max-width: 768px) {
     .skills {
         padding-top: 0;
+        padding-top: 0px;
+        position: relative;
+        top: -12px;
     }
 }
 
@@ -264,7 +267,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .skills .heading_wrap {
-        padding-bottom: 56px;
+        padding-bottom: 44px;
     }
 }
 
@@ -306,7 +309,8 @@ a:hover {
 
 @media (max-width: 768px) {
     .flex_container {
-        justify-content: space-around;
+        justify-content: center;
+        gap: 44px;
     }
 }
 
@@ -320,7 +324,7 @@ a:hover {
     .flex_item {
         width: 300px;
         height: 224px;
-        margin-bottom: 54px;
+        margin-bottom: -8px;
     }
 }
 
@@ -330,12 +334,12 @@ a:hover {
 
 @media (max-width: 768px) {
     .img_item {
-        margin-bottom: 30px;
+        margin-bottom: 26px;
     }
 }
 
 .header_item {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     font-family: Inter;
     font-style: normal;
     font-weight: 700;
@@ -350,7 +354,7 @@ a:hover {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 22px;
     color: #ffffff;
 }
 
@@ -372,13 +376,13 @@ a:hover {
 
 @media (max-width: 768px) {
     .portfolio {
-        padding-top: 26px;
+        padding-top: 115px;
     }
 }
 
 .portfolio .heading_wrap {
     position: relative;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 49px auto;
 }
 
 .portfolio .heading_wrap .heading {
@@ -418,7 +422,7 @@ a:hover {
 @media (max-width: 768px) {
     .flex_container_img {
         justify-content: center;
-        gap: 12.5px;
+        gap: 21px;
     }
 }
 
@@ -443,7 +447,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .video {
-        padding: 80px 0 0 0;
+        padding: 75px 0 0 0;
     }
 }
 
@@ -458,7 +462,7 @@ a:hover {
 }
 
 .video .heading_wrap .heading {
-    max-width: 154px;
+    max-width: 131px;
 }
 
 .video_player {
@@ -478,6 +482,7 @@ a:hover {
     .video_player {
         max-width: 768px;
         height: 418px;
+        background-position: -6px 0;
     }
 }
 
@@ -497,6 +502,13 @@ a:hover {
     background-color: rgb(0,0,0,0);
 }
 
+@media (max-width: 768px) {
+    .play {
+        height: 75px;
+        width: 75px;
+    }
+}
+
 .play:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
     cursor: pointer;
@@ -512,12 +524,25 @@ a:hover {
 
 @media (max-width: 768px) {
     .price {
-        padding-top: 80px;
+        padding-top: 78px;
+    }
+}
+
+.flex_container_price {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .flex_container_price {
+        justify-content: center;
+        gap: 50px;
     }
 }
 
 .price .heading_wrap .heading {
-    width: 154px;
+    width: 122px;
 }
 
 .price .heading_wrap {
@@ -526,7 +551,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .price .heading_wrap {
-        margin: 0 auto 50px auto;
+        margin: 0 auto 49px auto;
     }
 }
 
@@ -539,7 +564,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .price_item {
-        margin-bottom: 50px;
+        width: 420px;
     }
 }
 
@@ -601,7 +626,7 @@ a:hover {
 @media (max-width: 768px) {
     .contacts {
         padding-top: 0;
-        margin-top: 30px;
+        margin-top: 80px;
         max-width: 768px;
         height: 600px;
         background-position: center 0;
@@ -616,6 +641,15 @@ a:hover {
     height: 445px;
     margin-top: 60px;
     margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact_form{
+        margin-right: 0;
+    }
+    .sosials {
+        margin-top: 29px;
+    }
 }
 
 .contact_form h2 {
