@@ -247,6 +247,12 @@ a:hover {
     padding-top: 10px;
 }
 
+@media (max-width: 768px) {
+    .skills {
+        padding-top: 0;
+    }
+}
+
 .heading_wrap {
     position: relative;
 }
@@ -366,7 +372,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .portfolio {
-        padding-top: 46px;
+        padding-top: 26px;
     }
 }
 
@@ -437,7 +443,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .video {
-        padding: 70px 0 0 0;
+        padding: 80px 0 0 0;
     }
 }
 
@@ -504,6 +510,12 @@ a:hover {
     padding-top: 98px;
 }
 
+@media (max-width: 768px) {
+    .price {
+        padding-top: 80px;
+    }
+}
+
 .price .heading_wrap .heading {
     width: 154px;
 }
@@ -512,11 +524,23 @@ a:hover {
     margin: 0 auto 59px auto;
 }
 
+@media (max-width: 768px) {
+    .price .heading_wrap {
+        margin: 0 auto 50px auto;
+    }
+}
+
 .price_item {
     height: 505px;
     width: 450px;
     text-align: center;
     border: 3px solid #bdae82;
+}
+
+@media (max-width: 768px) {
+    .price_item {
+        margin-bottom: 50px;
+    }
 }
 
 .price_item h3 {
