@@ -189,6 +189,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .hero {
+        background-image: url(assets/img/bg768.jpg);
         max-width: 768px;
         height: 590px;
         padding: 0 60px;
@@ -499,9 +500,10 @@ a:hover {
 
 @media (max-width: 768px) {
     .video_player {
+        background-image: url(assets/img/video-player768.jpg);
         max-width: 768px;
         height: 418px;
-        background-position: -6px 0;
+        background-position: center 0;
     }
 }
 
