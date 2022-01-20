@@ -8,3 +8,14 @@ function toggleMenu() {
     menu_list.classList.toggle('open');
 }
 hamburger.addEventListener('click', toggleMenu);
+
+const navLinks = document.querySelectorAll('.nav_link');
+
+function closeMenu(event) {
+    if (event.target.classList.contains('nav_link')) {
+        hamburger.classList.remove('open')
+        menu_list.classList.remove('open')
+    }
+}
+
+navLinks.forEach((el) => el.addEventListener('click', closeMenu));
