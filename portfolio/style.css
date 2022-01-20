@@ -13,6 +13,7 @@ body {
     padding: 0;
     background-color: #000000;
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, p {
@@ -177,6 +178,12 @@ a:hover {
     color: #ffffff;
 }
 
+@media (max-width: 768px) {
+    .lang .rus {
+        margin-left: 20px;
+    }
+}
+
 /** end header **/
 
 /** hero **/
@@ -229,9 +236,18 @@ a:hover {
 
 @media (max-width: 768px) {
     .hero_text {
-        font-family: Inter;
         line-height: 24px;
-        width: 390px;
+        max-width: 390px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero_text {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 300px;
         margin-top: 20px;
         margin-bottom: 60px;
     }
@@ -290,6 +306,12 @@ a:hover {
     padding: 0 20px;
 }
 
+@media (max-width: 768px) {
+    .heading_wrap .heading {
+        z-index: 0;
+    }
+}
+
 .skills .heading_wrap .heading {
     width: 152px;
 }
@@ -307,6 +329,12 @@ a:hover {
     height: 2px;
     background-color: #bdae82;
     top: -40px;
+}
+
+@media (max-width: 768px) {
+    .title_decoration {
+        z-index: -1;
+    }
 }
 
 @media (max-width: 768px) {
@@ -454,8 +482,12 @@ a:hover {
 }
 
 .image_item {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 20px;
+}
+
+.image_item img {
+    max-width: 450px;
 }
 
 @media (max-width: 768px) {
@@ -490,6 +522,12 @@ a:hover {
 
 .video .heading_wrap .heading {
     max-width: 152px;
+}
+
+@media (max-width: 768px) {
+    .video .heading_wrap .heading {
+        max-width: 130px;
+    }
 }
 
 .video_player {
@@ -846,6 +884,8 @@ a:hover {
     .hamburger {
         display: block;
         z-index: 1;
+        margin-right: 3px;
+        margin-bottom: 2px;
     }
 }
 
@@ -861,40 +901,40 @@ a:hover {
 
 @media (max-width: 768px) {
     .menu_list {
-        display: none;
         flex-direction: column;
-        width: 100%;
+        width: 620px;
+        height: 1024px;
         right: -620px;
         background-color: #000000;
         position: absolute;
         z-index: 1;
         top: -16px;
         margin-right: 0;
-        padding-top: 90px;
-        padding-left: 60px;
-        box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
+        padding-left: 126px;
+        padding-top: 132px;
+        gap: 15px;
         transition: .5s;
     }
-    .navigation {
-        overflow-x: hidden;
-        transition: .5s;
-    }
-}
 
-.open {
-    transition: .5s;
+    .menu_list li a {
+        font-size: 34.8235px;
+        line-height: 73px;
+    }
 }
 
 .menu_list.open {
-    display: block;
-    width: 460px;
-    height: 1024px;
+    display: flex;
     right: 0;
-    transition: .5s;
+    padding-left: 126px;
+    padding-top: 132px;
+    gap: 15px;
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
+    opacity: 1;
 }
 
-.hamburger.open .line {
-    width: 61px;
+.menu_list.open li a {
+    font-size: 34.8235px;
+    line-height: 73px;
 }
 
 .hamburger.open .line1{
