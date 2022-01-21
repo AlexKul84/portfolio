@@ -993,8 +993,6 @@ a:hover {
     }
 }
 
-
-
 .menu_container.open {
     position: absolute;
     overflow-x: hidden;
@@ -1005,6 +1003,12 @@ a:hover {
     z-index: 0;
     transition: .5s;
     box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
+}
+
+@media (max-width: 620px) {
+    .menu_container.open {
+        width: 100%;
+    }
 }
 
 .hamburger_menu.open {
