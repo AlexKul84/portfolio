@@ -918,7 +918,7 @@ a:hover {
 
     .hamburger.open {
         position: absolute;
-        right: 60px;
+        right: 56px;
         z-index: 1;
     }
 
@@ -943,9 +943,19 @@ a:hover {
     width: 61px;
 }
 
+.menu_container {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .menu_list {
         display: none;
+    }
+
+    .menu_container {
+        display: block;
+        position: relative;
+        overflow-x: hidden;
     }
 
     .hamburger_menu {
@@ -983,10 +993,7 @@ a:hover {
     }
 }
 
-.menu_container {
-    position: relative;
-    overflow-x: hidden;
-}
+
 
 .menu_container.open {
     position: absolute;
