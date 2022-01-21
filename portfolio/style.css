@@ -936,9 +936,6 @@ a:hover {
     transition: .5s;
 }
 
-.hamburger.open .line1 {
-    transform: translateY(13px) rotate(45deg);
-}
 .hamburger.open .line {
     width: 61px;
 }
@@ -956,6 +953,7 @@ a:hover {
         display: block;
         position: relative;
         overflow-x: hidden;
+        transition: .5s;
     }
 
     .hamburger_menu {
