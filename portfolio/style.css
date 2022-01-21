@@ -33,6 +33,12 @@ h1, h2, h3, p {
     }
 }
 
+@media (max-width: 420px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
 header {
     position: relative;
     z-index: 1;
@@ -210,6 +216,12 @@ a:hover {
     }
   }
 
+  @media (max-width: 420px) {
+    .hero {
+        padding: 0 20px;
+    }
+  }
+
 .hero .wrap {
     padding-top: 250px;
     margin-left: 60px;
@@ -247,7 +259,7 @@ a:hover {
     .hero_text {
         font-size: 14px;
         line-height: 18px;
-        max-width: 300px;
+        max-width: 250px;
         margin-top: 20px;
         margin-bottom: 60px;
     }
@@ -723,6 +735,12 @@ a:hover {
     }
     .sosials {
         margin-top: 29px;
+    }
+}
+
+@media (max-width: 420px) {
+    .contact_form{
+        width: 250px;
     }
 }
 
