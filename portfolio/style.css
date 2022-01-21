@@ -488,7 +488,8 @@ a:hover {
 }
 
 .image_item img {
-    max-width: 450px;
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -889,6 +890,10 @@ a:hover {
         margin-right: 3px;
         margin-bottom: 2px;
     }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
 }
 
 .hamburger .line{
@@ -904,9 +909,7 @@ a:hover {
 @media (max-width: 768px) {
     .menu_list {
         flex-direction: column;
-        width: 620px;
-        height: 1024px;
-        right: -620px;
+        right: -305px;
         background-color: #000000;
         position: absolute;
         z-index: 1;
@@ -926,12 +929,10 @@ a:hover {
 
 .menu_list.open {
     display: flex;
+    width: 620px;
+    height: 1024px;
     right: 0;
-    padding-left: 126px;
-    padding-top: 132px;
-    gap: 15px;
     box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
-    opacity: 1;
 }
 
 .menu_list.open li a {
