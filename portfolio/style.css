@@ -499,6 +499,12 @@ a:hover {
     max-height: 560px;
 }
 
+@media (max-width: 768px) {
+    .image_item {
+        max-height: 564px;
+    }
+}
+
 .image_item img {
     width: 100%;
     height: auto;
