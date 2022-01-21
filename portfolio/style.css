@@ -929,13 +929,8 @@ a:hover {
     transition: .5s;
 }
 
-
-element.style {
-}
 .hamburger.open .line1 {
-    transform: translateY(13px) rotate(
-45deg
-);
+    transform: translateY(13px) rotate(45deg);
 }
 .hamburger.open .line {
     width: 61px;
@@ -943,8 +938,11 @@ element.style {
 
 @media (max-width: 768px) {
     .menu_list {
+        display: flex;
         flex-direction: column;
-        right: -305px;
+        width: 620px;
+        height: 1024px;
+        right: -620px;
         background-color: #000000;
         position: absolute;
         z-index: 1;
@@ -962,10 +960,21 @@ element.style {
     }
 }
 
+@media (max-width: 620px) {
+    .menu_list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .menu_list {
+        padding-left: 70px;
+    }
+}
+
 .menu_list.open {
-    display: flex;
-    width: 620px;
-    height: 1024px;
+
+
     right: 0;
     box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
 }
