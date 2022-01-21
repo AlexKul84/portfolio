@@ -13,6 +13,7 @@ body {
     padding: 0;
     background-color: #000000;
     color: #ffffff;
+    position: relative;
     overflow-x: hidden;
 }
 
@@ -916,7 +917,9 @@ a:hover {
     }
 
     .hamburger.open {
-        margin-right: -2px;
+        position: absolute;
+        right: 60px;
+        z-index: 1;
     }
 
     .hamburger:hover {
@@ -942,6 +945,10 @@ a:hover {
 
 @media (max-width: 768px) {
     .menu_list {
+        display: none;
+    }
+
+    .hamburger_menu {
         display: flex;
         flex-direction: column;
         width: 620px;
@@ -958,32 +965,47 @@ a:hover {
         transition: .5s;
     }
 
-    .menu_list li a {
+    .hamburger_menu li a {
         font-size: 34.8235px;
         line-height: 73px;
     }
 }
 
 @media (max-width: 620px) {
-    .menu_list {
+    .hamburger_menu {
         width: 100%;
     }
 }
 
 @media (max-width: 420px) {
-    .menu_list {
+    .hamburger_menu {
         padding-left: 70px;
     }
 }
 
-.menu_list.open {
+.menu_container {
+    position: relative;
+    overflow-x: hidden;
+}
 
+.menu_container.open {
+    position: absolute;
+    overflow-x: hidden;
+    height: 1024px;
+    width: 620px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    transition: .5s;
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
+}
 
+.hamburger_menu.open {
     right: 0;
     box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
 }
 
-.menu_list.open li a {
+.hamburger_menu.open li a {
     font-size: 34.8235px;
     line-height: 73px;
 }
