@@ -911,7 +911,7 @@ a:hover {
     .hamburger {
         display: block;
         z-index: 1;
-        margin-right: 3px;
+        margin-right: -2px;
         margin-bottom: 2px;
     }
 
@@ -927,7 +927,18 @@ a:hover {
     display: block;
     margin: 10px auto;
     transition: .5s;
-    
+}
+
+
+element.style {
+}
+.hamburger.open .line1 {
+    transform: translateY(13px) rotate(
+45deg
+);
+}
+.hamburger.open .line {
+    width: 61px;
 }
 
 @media (max-width: 768px) {
@@ -973,5 +984,5 @@ a:hover {
 }
 
 .hamburger.open .line3{
-    transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-14px) rotate(-45deg);
 }
