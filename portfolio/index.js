@@ -29,11 +29,11 @@ navLinks.forEach((el) => el.addEventListener('click', closeMenu));
 
 /* portfolio change image */
 
-// const portfolioBtn = document.querySelector('.bg_gold');
-// const portfolioImage = document.querySelector('.image');
+const portfolioBtn = document.querySelector('.bg_gold');
+const portfolioImage = document.querySelector('.image');
 
-// portfolioBtn.addEventListener('click', () => {
-//    portfolioImage.src = "./assets/img/autumn/1.jpg"
-// });
+portfolioBtn.addEventListener('click', () => {
+   portfolioImage.src = "./assets/img/autumn/1.jpg"
+});
 
 /* end portfolio change image */
