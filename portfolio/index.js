@@ -29,11 +29,23 @@ navLinks.forEach((el) => el.addEventListener('click', closeMenu));
 
 /* portfolio change image */
 
-const portfolioBtn = document.querySelector('.bg_gold');
-const portfolioImage = document.querySelector('.image');
+const portfolioBtns = document.querySelector('.portfolio_btns');
 
-portfolioBtn.addEventListener('click', () => {
-   portfolioImage.src = "./assets/img/autumn/1.jpg"
+const portfolioImages = document.querySelectorAll('.image');
+
+portfolioBtns.addEventListener('click', (event) => {
+    if(event.target.classList.contains('portfolio_winter')) {
+        portfolioImages.forEach((img, index) => img.src = `./assets/img/winter/${index + 1}.jpg`);
+    }
+    if(event.target.classList.contains('portfolio_spring')) {
+        portfolioImages.forEach((img, index) => img.src = `./assets/img/spring/${index + 1}.jpg`);
+    }
+    if(event.target.classList.contains('portfolio_summer')) {
+        portfolioImages.forEach((img, index) => img.src = `./assets/img/summer/${index + 1}.jpg`);
+    }
+    if(event.target.classList.contains('portfolio_autumn')) {
+        portfolioImages.forEach((img, index) => img.src = `./assets/img/autumn/${index + 1}.jpg`);
+    }
 });
 
 /* end portfolio change image */
