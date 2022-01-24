@@ -958,13 +958,17 @@ a:hover {
     width: 61px;
 }
 
-.hamburger_menu {
+.menu_container {
     display: none;
 }
 
 @media (max-width: 768px) {
     .navigation {
         display: none;
+    }
+
+    .menu_container {
+        display: block;
     }
 
     .hamburger_menu {
