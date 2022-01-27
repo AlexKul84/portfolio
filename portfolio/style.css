@@ -22,7 +22,7 @@ h1, h2, h3, p {
     padding: 0;
 }
 
-.container {
+.container, .header, .skills, .portfolio, .price {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
@@ -34,16 +34,29 @@ h1, h2, h3, p {
     }
 }
 
-@media (max-width: 420px) {
-    .container {
-        padding: 0 20px;
-    }
-}
+
 
 header {
     position: relative;
     z-index: 1;
-    background: rgb(0,0,0,0);
+    background-image: url(assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+@media (max-width: 768px){
+    .header {
+        background-image: url(assets/img/bg768.jpg);
+        max-width: 768px;
+        height: 90px;
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container, .header, .skills, .portfolio, .price {
+        padding: 0 20px;
+    }
 }
 
 h1 {
@@ -100,6 +113,41 @@ a:hover {
     color: #ffffff;
     cursor: pointer;
 }
+
+  .carbon {
+      margin: 0 0 0 30px;
+      background-image: url(assets/svg/light.svg);
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-size: cover;
+      height: 45px;
+      width: 45px;
+      transition: .5s;
+  }
+
+  .carbon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    cursor: pointer;
+  }
+
+  .carbon_light {
+    background-image: url(assets/svg/dark.svg);
+  }
+
+  @media (max-width: 768px) {
+    .carbon {
+        margin: 0 30px 0 0;
+    }
+  }
+
+  .light_theme {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .light_theme:hover {
+    color: #000;
+  }
 
 /** header **/
 
@@ -197,12 +245,10 @@ a:hover {
 
 .hero {
     position: relative;
-    top: -90px;
     background-image: url(assets/img/bg.jpg);
     background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: cover;
-    height: 910px;
+    background-position: center -90px;
+    height: 760px;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
@@ -281,7 +327,7 @@ a:hover {
 /** skills **/
 
 .skills {
-    padding-top: 10px;
+    padding-top: 100px;
 }
 
 @media (max-width: 768px) {
@@ -308,7 +354,7 @@ a:hover {
     }
 }
 
-.heading_wrap .heading {
+.heading {
     position: relative;
     margin: 0 auto;
     z-index: 1;
@@ -318,6 +364,11 @@ a:hover {
     text-align: center;
     padding: 0 20px;
 }
+
+.heading.light_theme {
+    background-color: #ffffff;
+}
+
 
 @media (max-width: 768px) {
     .heading_wrap .heading {
@@ -612,6 +663,7 @@ a:hover {
 
 .price {
     padding-top: 98px;
+    padding-bottom: 100px;
 }
 
 @media (max-width: 768px) {
@@ -718,7 +770,6 @@ a:hover {
     display: flex;
     justify-content: end;
     max-width: 1440px;
-    margin-top: 100px;
 }
 
 @media (max-width: 768px) {
