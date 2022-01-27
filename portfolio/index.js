@@ -33,19 +33,104 @@ const portfolioBtns = document.querySelector('.portfolio_btns');
 
 const portfolioImages = document.querySelectorAll('.image');
 
-portfolioBtns.addEventListener('click', (event) => {
+const portfolioBtnAll = document.querySelectorAll('portfolio_btn')
+
+const winter = document.querySelector('.portfolio_winter')
+const spring = document.querySelector('.portfolio_spring')
+const summer = document.querySelector('.portfolio_summer')
+const autumn = document.querySelector('.portfolio_autumn')
+
+portfolioBtns.addEventListener('click', function changeImage(event) {
     if(event.target.classList.contains('portfolio_winter')) {
         portfolioImages.forEach((img, index) => img.src = `./assets/img/winter/${index + 1}.jpg`);
+        
+        spring.classList.remove('active');
+        summer.classList.remove('active');
+        autumn.classList.remove('active');
+        
+        event.target.classList.add('active');
     }
     if(event.target.classList.contains('portfolio_spring')) {
         portfolioImages.forEach((img, index) => img.src = `./assets/img/spring/${index + 1}.jpg`);
+        
+        winter.classList.remove('active');
+        summer.classList.remove('active');
+        autumn.classList.remove('active');
+
+        event.target.classList.add('active');
     }
     if(event.target.classList.contains('portfolio_summer')) {
         portfolioImages.forEach((img, index) => img.src = `./assets/img/summer/${index + 1}.jpg`);
+        
+        spring.classList.remove('active');
+        winter.classList.remove('active');
+        autumn.classList.remove('active');
+        
+        event.target.classList.add('active');
     }
     if(event.target.classList.contains('portfolio_autumn')) {
         portfolioImages.forEach((img, index) => img.src = `./assets/img/autumn/${index + 1}.jpg`);
+
+        summer.classList.remove('active');
+        winter.classList.remove('active');
+        spring.classList.remove('active');
+
+        event.target.classList.add('active');
     }
 });
 
+
+
 /* end portfolio change image */
+
+/* change button */
+
+//1.
+/////////////////////////////////////////////////////////////////
+
+// const portfolioWinter = document.querySelector('.portfolio_winter');
+
+// portfolioWinter.addEventListener('click', function changeButton() {
+//     portfolioWinter.style.backgroundColor = '#bdae82';
+//     portfolioWinter.style.color = '#000';
+// })
+
+// const portfolioSpring = document.querySelector('.portfolio_spring');
+
+// portfolioSpring.addEventListener('click', function changeButton() {
+//     portfolioSpring.style.backgroundColor = '#bdae82';
+//     portfolioSpring.style.color = '#000';
+// })
+
+//2.
+//////////////////////////////////////////////////////////////////
+
+// const portfolioBtn = document.querySelector('.portfolio_btn');
+
+// function toggleBtn() {
+//     portfolioBtn.classList.toggle('active');
+// }
+// portfolioBtn.addEventListener('click', toggleBtn);
+
+//3.
+///////////////////////////////////////////////////////////////////
+
+// 
+
+// function removeClassActive(event) {
+//     if(event.target.classList.contains('portfolio_btn')) {
+//         portfolioBtnAll.forEach((btn) => btn.classList.remove('active'));
+//     }
+// };
+
+// function addClassActive(event) {
+//     if(event.target.classList.contains('portfolio_btn')) {
+//         event.target.classList.add('active');
+//     }
+// };
+
+// portfolioBtns.addEventListener('click', addClassActive)
+
+
+
+/* end change button */

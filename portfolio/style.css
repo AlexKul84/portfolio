@@ -517,6 +517,11 @@ a:hover {
     }
 }
 
+.portfolio_btn.active {
+    color: #000;
+    background-color: #bdae82;
+}
+
 /** end portfolio **/
 
 /** video **/
