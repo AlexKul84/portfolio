@@ -81,10 +81,20 @@ const i18Obj = {
     }
   }
 
-  const getTranslate = (lang) => {
-    let e = dataset.i18
+  const english = document.querySelector('.english');
+  const russian = document.querySelector('.russian');
+  
+  
+  russian.addEventListener('click', function switchToRussian() {
+      const e = document.querySelectorAll('[data-i18]')
+      e.forEach((d) => d.textContent = i18Obj['ru'][d.dataset.i18])
+  })
 
-  }
+  english.addEventListener('click', function switchToRussian() {
+    const e = document.querySelectorAll('[data-i18]')
+    e.forEach((d) => d.textContent = i18Obj['en'][d.dataset.i18])
+})
+
 
 /* hamburger menu */
 
