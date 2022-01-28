@@ -22,7 +22,7 @@ h1, h2, h3, p {
     padding: 0;
 }
 
-.container {
+.container, .header, .skills, .portfolio, .price {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
@@ -34,16 +34,29 @@ h1, h2, h3, p {
     }
 }
 
-@media (max-width: 420px) {
-    .container {
-        padding: 0 20px;
-    }
-}
+
 
 header {
     position: relative;
     z-index: 1;
-    background: rgb(0,0,0,0);
+    background-image: url(assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+@media (max-width: 768px){
+    .header {
+        background-image: url(assets/img/bg768.jpg);
+        max-width: 768px;
+        height: 90px;
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container, .header, .skills, .portfolio, .price {
+        padding: 0 20px;
+    }
 }
 
 h1 {
@@ -89,6 +102,15 @@ a:hover {
     transition: .5s;
 }
 
+.bg_dark.light_theme {
+    background-color: #ffffff;
+}
+
+.bg_dark.light_theme:hover {
+    color: #ffffff;
+    background-color: #bdae82;
+}
+
 .bg_gold {
     color: #000000;
     background-color: #bdae82;
@@ -100,6 +122,41 @@ a:hover {
     color: #ffffff;
     cursor: pointer;
 }
+
+  .carbon {
+      margin: 0 0 0 30px;
+      background-image: url(assets/svg/light.svg);
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-size: cover;
+      height: 45px;
+      width: 45px;
+      transition: .5s;
+  }
+
+  .carbon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    cursor: pointer;
+  }
+
+  .carbon_light {
+    background-image: url(assets/svg/dark.svg);
+  }
+
+  @media (max-width: 768px) {
+    .carbon {
+        margin: 0 30px 0 0;
+    }
+  }
+
+  .light_theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .light_theme:hover {
+    color: #000000;
+  }
 
 /** header **/
 
@@ -166,6 +223,8 @@ a:hover {
     }
 }
 
+
+
 .lang a {
     text-decoration: none;
     transition: .5s;
@@ -197,12 +256,10 @@ a:hover {
 
 .hero {
     position: relative;
-    top: -90px;
     background-image: url(assets/img/bg.jpg);
     background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: cover;
-    height: 910px;
+    background-position: center -90px;
+    height: 760px;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
@@ -212,7 +269,7 @@ a:hover {
     .hero {
         background-image: url(assets/img/bg768.jpg);
         max-width: 768px;
-        height: 590px;
+        height: 500px;
         padding: 0 60px;
     }
   }
@@ -281,15 +338,13 @@ a:hover {
 /** skills **/
 
 .skills {
-    padding-top: 10px;
+    padding-top: 100px;
 }
 
 @media (max-width: 768px) {
     .skills {
-        padding-top: 0;
-        padding-top: 0px;
+        padding-top: 100px;
         position: relative;
-        top: -12px;
     }
 }
 
@@ -308,7 +363,7 @@ a:hover {
     }
 }
 
-.heading_wrap .heading {
+.heading {
     position: relative;
     margin: 0 auto;
     z-index: 1;
@@ -319,6 +374,11 @@ a:hover {
     padding: 0 20px;
 }
 
+.heading.light_theme {
+    background-color: #ffffff;
+}
+
+
 @media (max-width: 768px) {
     .heading_wrap .heading {
         z-index: 0;
@@ -326,12 +386,12 @@ a:hover {
 }
 
 .skills .heading_wrap .heading {
-    width: 152px;
+    width: 300px;
 }
 
 @media (max-width: 768px) {
     .skills .heading_wrap .heading {
-        width: 131px;
+        width: 242px;
     }
 }
 
@@ -414,6 +474,10 @@ a:hover {
     color: #ffffff;
 }
 
+.discription_item.light_theme {
+    color: #000000;
+}
+
 @media (max-width: 768px) {
     .discription_item {
         margin-right: 10px;
@@ -449,12 +513,12 @@ a:hover {
 }
 
 .portfolio .heading_wrap .heading {
-    width: 226px;
+    width: 300px;
 }
 
 @media (max-width: 768px) {
     .portfolio .heading_wrap .heading {
-        width: 186px;
+        width: 242px;
     }
 }
 
@@ -517,6 +581,16 @@ a:hover {
     }
 }
 
+.portfolio_btn.active {
+    color: #000;
+    background-color: #bdae82;
+    transition: .5s;
+}
+
+.portfolio_btn.active:hover {
+    color: #ffffff;
+}
+
 /** end portfolio **/
 
 /** video **/
@@ -542,12 +616,12 @@ a:hover {
 }
 
 .video .heading_wrap .heading {
-    max-width: 152px;
+    max-width: 300px;
 }
 
 @media (max-width: 768px) {
     .video .heading_wrap .heading {
-        max-width: 130px;
+        max-width: 242px;
     }
 }
 
@@ -607,6 +681,7 @@ a:hover {
 
 .price {
     padding-top: 98px;
+    padding-bottom: 100px;
 }
 
 @media (max-width: 768px) {
@@ -630,12 +705,12 @@ a:hover {
 }
 
 .price .heading_wrap .heading {
-    width: 144px;
+    width: 300px;
 }
 
 @media (max-width: 768px) {
     .price .heading_wrap .heading {
-        width: 123px;
+        width: 242px;
     }
 }
 
@@ -662,7 +737,7 @@ a:hover {
     }
 }
 
-.price_item h3 {
+.price_heading {
     font-family: Merriweather;
     font-style: normal;
     font-weight: 700;
@@ -673,13 +748,21 @@ a:hover {
     margin-top: 39px;
 }
 
-.price_item p {
+.price_heading.light_theme {
+    color: #000000;
+}
+
+.price_item_desc {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 36px;
     color: #ffffff;
+}
+
+.price_item_desc.light_theme {
+    color: #000000;
 }
 
 .price_item .count span {
@@ -713,13 +796,12 @@ a:hover {
     display: flex;
     justify-content: end;
     max-width: 1440px;
-    margin-top: 100px;
 }
 
 @media (max-width: 768px) {
     .contacts {
         padding-top: 0;
-        margin-top: 80px;
+        margin-top: 0;
         max-width: 768px;
         height: 600px;
         background-position: center 0;
@@ -924,6 +1006,7 @@ a:hover {
     height: 1024px;
     box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
     right: 0;
+    z-index: 0;
 }
 
 @media (max-width: 768px) {
@@ -969,6 +1052,7 @@ a:hover {
 
     .menu_container {
         display: block;
+        z-index: -1;
     }
 
     .hamburger_menu {
