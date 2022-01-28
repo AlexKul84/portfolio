@@ -386,12 +386,12 @@ a:hover {
 }
 
 .skills .heading_wrap .heading {
-    width: 152px;
+    width: 300px;
 }
 
 @media (max-width: 768px) {
     .skills .heading_wrap .heading {
-        width: 131px;
+        width: 242px;
     }
 }
 
@@ -513,12 +513,12 @@ a:hover {
 }
 
 .portfolio .heading_wrap .heading {
-    width: 226px;
+    width: 300px;
 }
 
 @media (max-width: 768px) {
     .portfolio .heading_wrap .heading {
-        width: 186px;
+        width: 242px;
     }
 }
 
@@ -616,12 +616,12 @@ a:hover {
 }
 
 .video .heading_wrap .heading {
-    max-width: 152px;
+    max-width: 300px;
 }
 
 @media (max-width: 768px) {
     .video .heading_wrap .heading {
-        max-width: 130px;
+        max-width: 242px;
     }
 }
 
@@ -705,12 +705,12 @@ a:hover {
 }
 
 .price .heading_wrap .heading {
-    width: 144px;
+    width: 300px;
 }
 
 @media (max-width: 768px) {
     .price .heading_wrap .heading {
-        width: 123px;
+        width: 242px;
     }
 }
 
