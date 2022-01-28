@@ -141,12 +141,12 @@ a:hover {
   }
 
   .light_theme {
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
   }
   
   .light_theme:hover {
-    color: #000;
+    color: #000000;
   }
 
 /** header **/

@@ -142,18 +142,21 @@ const skills = document.querySelector('.skills');
 const portfolio = document.querySelector('.portfolio');
 const video = document.querySelector('.video');
 const price = document.querySelector('.price');
-const heading = document.querySelectorAll('.heading');
+const heading = document.querySelector('.heading');
 const discription_item = document.querySelector('.discription_item')
 
-function swithTheme() {
-    carbon.classList.toggle('carbon_light');
-    skills.classList.toggle('light_theme');
-    portfolio.classList.toggle('light_theme');
-    video.classList.toggle('light_theme');
-    price.classList.toggle('light_theme');
-    heading.classList.toggle('light_theme');
-    discription_item.classList.toggle('light_theme');
-}
-carbon.addEventListener('click', swithTheme);
+
+carbon.addEventListener('click', function swithTheme(event) {
+    if(event.target.classList.contains('carbon')) {
+        event.target.classList.toggle('carbon_light');
+        skills.classList.toggle('light_theme');
+        portfolio.classList.toggle('light_theme');
+        video.classList.toggle('light_theme');
+        price.classList.toggle('light_theme');
+        heading.classList.toggle('light_theme');
+        discription_item.classList.toggle('light_theme');
+    }
+})
+
 
 /* change theme */
