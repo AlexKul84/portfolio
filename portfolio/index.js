@@ -1,5 +1,11 @@
 console.log('1. Вёрстка соответствует макету. Ширина экрана 768px +48\n 2. Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15\n 3. На ширине экрана 768рх и меньше реализовано адаптивное меню +22\n total: 75 баллов');
 
+/* global variable */
+let theme = 'light';
+let lang = 'en';
+
+/* end global variable */
+
 /* hamburger menu */
 
 const hamburger = document.querySelector('.hamburger');
@@ -77,61 +83,7 @@ portfolioBtns.addEventListener('click', function changeImage(event) {
     }
 });
 
-
-
 /* end portfolio change image */
-
-/* change button */
-
-//1.
-/////////////////////////////////////////////////////////////////
-
-// const portfolioWinter = document.querySelector('.portfolio_winter');
-
-// portfolioWinter.addEventListener('click', function changeButton() {
-//     portfolioWinter.style.backgroundColor = '#bdae82';
-//     portfolioWinter.style.color = '#000';
-// })
-
-// const portfolioSpring = document.querySelector('.portfolio_spring');
-
-// portfolioSpring.addEventListener('click', function changeButton() {
-//     portfolioSpring.style.backgroundColor = '#bdae82';
-//     portfolioSpring.style.color = '#000';
-// })
-
-//2.
-//////////////////////////////////////////////////////////////////
-
-// const portfolioBtn = document.querySelector('.portfolio_btn');
-
-// function toggleBtn() {
-//     portfolioBtn.classList.toggle('active');
-// }
-// portfolioBtn.addEventListener('click', toggleBtn);
-
-//3.
-///////////////////////////////////////////////////////////////////
-
-// 
-
-// function removeClassActive(event) {
-//     if(event.target.classList.contains('portfolio_btn')) {
-//         portfolioBtnAll.forEach((btn) => btn.classList.remove('active'));
-//     }
-// };
-
-// function addClassActive(event) {
-//     if(event.target.classList.contains('portfolio_btn')) {
-//         event.target.classList.add('active');
-//     }
-// };
-
-// portfolioBtns.addEventListener('click', addClassActive)
-
-
-
-/* end change button */
 
 /* change theme */
 
@@ -166,4 +118,6 @@ carbon.addEventListener('click', function switchTheme(event) {
 })
 
 
-/* change theme */
+/*  change theme */
+
+
