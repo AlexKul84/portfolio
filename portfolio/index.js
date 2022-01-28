@@ -146,7 +146,7 @@ const discription_item = document.querySelector('.discription_item')
 const discription_items = document.querySelectorAll('.discription_item')
 const price_headings = document.querySelectorAll('.price_heading')
 const price_item_descs = document.querySelectorAll('.price_item_desc')
-const portfolioBtnAll = document.querySelectorAll('bg_dark')
+const portfolioBtnAll = document.querySelectorAll('.bg_dark')
 
 
 
