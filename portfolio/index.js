@@ -33,8 +33,6 @@ const portfolioBtns = document.querySelector('.portfolio_btns');
 
 const portfolioImages = document.querySelectorAll('.image');
 
-const portfolioBtnAll = document.querySelectorAll('portfolio_btn')
-
 const winter = document.querySelector('.portfolio_winter')
 const spring = document.querySelector('.portfolio_spring')
 const summer = document.querySelector('.portfolio_summer')
@@ -143,18 +141,27 @@ const portfolio = document.querySelector('.portfolio');
 const video = document.querySelector('.video');
 const price = document.querySelector('.price');
 const heading = document.querySelector('.heading');
+const headings = document.querySelectorAll('.heading');
 const discription_item = document.querySelector('.discription_item')
+const discription_items = document.querySelectorAll('.discription_item')
+const price_headings = document.querySelectorAll('.price_heading')
+const price_item_descs = document.querySelectorAll('.price_item_desc')
+const portfolioBtnAll = document.querySelectorAll('bg_dark')
 
 
-carbon.addEventListener('click', function swithTheme(event) {
+
+carbon.addEventListener('click', function switchTheme(event) {
     if(event.target.classList.contains('carbon')) {
         event.target.classList.toggle('carbon_light');
         skills.classList.toggle('light_theme');
         portfolio.classList.toggle('light_theme');
         video.classList.toggle('light_theme');
         price.classList.toggle('light_theme');
-        heading.classList.toggle('light_theme');
-        discription_item.classList.toggle('light_theme');
+        headings.forEach((h2Heading) => h2Heading.classList.toggle('light_theme'));
+        discription_items.forEach((pDesc) => pDesc.classList.toggle('light_theme'));
+        price_headings.forEach((h3Price) => h3Price.classList.toggle('light_theme'));
+        price_item_descs.forEach((pPrice) => pPrice.classList.toggle('light_theme'));
+        portfolioBtnAll.forEach((btnPotfolio) => btnPotfolio.classList.toggle('light_theme'));
     }
 })
 

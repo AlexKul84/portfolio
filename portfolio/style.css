@@ -102,6 +102,10 @@ a:hover {
     transition: .5s;
 }
 
+.bg_dark.light_theme {
+    background-color: #ffffff;
+}
+
 .bg_gold {
     color: #000000;
     background-color: #bdae82;
@@ -465,6 +469,10 @@ a:hover {
     color: #ffffff;
 }
 
+.discription_item.light_theme {
+    color: #000000;
+}
+
 @media (max-width: 768px) {
     .discription_item {
         margin-right: 10px;
@@ -719,7 +727,7 @@ a:hover {
     }
 }
 
-.price_item h3 {
+.price_heading {
     font-family: Merriweather;
     font-style: normal;
     font-weight: 700;
@@ -730,13 +738,21 @@ a:hover {
     margin-top: 39px;
 }
 
-.price_item p {
+.price_heading.light_theme {
+    color: #000000;
+}
+
+.price_item_desc {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 36px;
     color: #ffffff;
+}
+
+.price_item_desc.light_theme {
+    color: #000000;
 }
 
 .price_item .count span {
