@@ -85,14 +85,22 @@ const i18Obj = {
   const russian = document.querySelector('.russian');
   
   
-  russian.addEventListener('click', function switchToRussian() {
-      const e = document.querySelectorAll('[data-i18]')
-      e.forEach((d) => d.textContent = i18Obj['ru'][d.dataset.i18])
+  russian.addEventListener('click', function switchToRussian(event) {
+    if(event.target.classList.contains('russian')) {
+        event.target.classList.add('langActive');
+        english.classList.remove('langActive')
+        const e = document.querySelectorAll('[data-i18]')
+        e.forEach((d) => d.textContent = i18Obj['ru'][d.dataset.i18])
+    }
   })
 
-  english.addEventListener('click', function switchToRussian() {
-    const e = document.querySelectorAll('[data-i18]')
-    e.forEach((d) => d.textContent = i18Obj['en'][d.dataset.i18])
+  english.addEventListener('click', function switchToRussian(event) {
+    if(event.target.classList.contains('english')) {
+        event.target.classList.add('langActive');
+        russian.classList.remove('langActive')
+        const e = document.querySelectorAll('[data-i18]')
+        e.forEach((d) => d.textContent = i18Obj['en'][d.dataset.i18])
+    }
 })
 
 
