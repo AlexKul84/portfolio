@@ -223,8 +223,6 @@ a:hover {
     }
 }
 
-
-
 .lang a {
     text-decoration: none;
     transition: .5s;
@@ -234,14 +232,22 @@ a:hover {
     color: #bdae82;
 }
 
-.lang .active {
+.english {
     margin-right: 8px;
+    color: #ffffff;
+}
+
+.russian {
+    margin-left: 8px;
+    color: #ffffff;
+}
+
+.english.langActive {
     color: #bdae82;
 }
 
-.lang .rus {
-    margin-left: 8px;
-    color: #ffffff;
+.russian.langActive {
+    color: #bdae82;
 }
 
 @media (max-width: 768px) {
