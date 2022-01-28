@@ -106,6 +106,11 @@ a:hover {
     background-color: #ffffff;
 }
 
+.bg_dark.light_theme:hover {
+    color: #ffffff;
+    background-color: #bdae82;
+}
+
 .bg_gold {
     color: #000000;
     background-color: #bdae82;
@@ -579,6 +584,11 @@ a:hover {
 .portfolio_btn.active {
     color: #000;
     background-color: #bdae82;
+    transition: .5s;
+}
+
+.portfolio_btn.active:hover {
+    color: #ffffff;
 }
 
 /** end portfolio **/
