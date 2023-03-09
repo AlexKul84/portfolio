@@ -1,2 +1,1 @@
-# alexkul84-JSFEPRESCHOOL
-Private repository for @alexkul84
+portfolio - учебный проект The Rolling Scopes School
